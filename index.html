@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCCO Invoice </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="fav.png" type="image/x-icon">
+</head>
+
+<body>
+    
+
+    <table style="border: none !important; background-color: white !important; " class="report-container">
+        <thead style="border: none !important; background-color: white !important;" class="report-header">
+          <tr style="border: none !important; background-color: white !important;">
+            <th style="border: none !important; background-color: white !important;" class="report-header-cell">
+              <div style="border: none !important; background-color: white !important;" class="header-info">
+                <nav style="border: none !important; background-color: white !important;" class="imgg">
+                    <img style="background-color: white !important;" src="logo2.png" alt="">
+                </nav>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tfoot style="border: none !important;" class="report-footer">
+          <tr style="border: none !important;">
+            <td class="report-footer-cell" style="border: none !important;">
+              <div class="footer-info" style="border: none !important;">
+                <p style="text-align: center; font-size: 12px;">4394 Khalid Bin Al Walid Street,  Ar Rakah Ash Shamaliyah Dist.  Dammam  34224 , Saudi Arabia</p>
+              </div>
+            </td>
+          </tr>
+        </tfoot>
+        <tbody style="border: none !important;" class="report-content">
+          <tr>
+            <td style="border: none !important;" class="report-content-cell">
+              <div style="border: none !important;" class="main">
+                
+
+                <div class="container">
+                    <div class="customer-info">
+                        <div class="customer">
+            
+                            <label id="custl" for="customer-name">===Customer Detail===:</label>
+                            <input autocomplete="off" type="text" id="customer-name" value="" placeholder="Customer Company">
+                            <input autocomplete="off" type="text" id="customer-address" value="" placeholder="Customer Name">
+                        </div>
+                        <div class="vendor">
+            
+                            <label id="custl" for="customer-email">===Vendor Details===</label>
+                            <input autocomplete="off" type="email" id="customer-email" value="" placeholder="Vendor Details">
+                        </div>
+                    </div>
+                    <div class="quotation-info">
+                        <div class="quotenum">
+            
+                            <label  id="quoteinfo" for="quotation-no">Quotation #</label>
+                            <input autocomplete="off"  type="text" id="quotation-no"  placeholder="ACCO-NAS-22001">
+                        </div>
+                        
+                        <div class="issued">
+            
+                            <label  id="quoteinfo" for="issue-date">Issue Date:</label>
+                            <input autocomplete="off"  type="date" id="issue-date" placeholder="2022-08-17">
+                        </div>
+                        
+                        <div class="expiryd">
+            
+                            <label  id="quoteinfo" for="expiry-date">Expiry Date:</label>
+                            <input autocomplete="off" type="date" id="expiry-date" placeholder="2022-08-17">
+                        </div>
+                        
+                        <div class="salesp">
+            
+                            <label  id="quoteinfo" for="sales-person">Sales Person:</label>
+                            <input autocomplete="off" type="text" id="sales-person" placeholder="Name">
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="subject">
+                    <label for="subject">Subject:</label>
+                    <input autocomplete="off" style="height: 25px;" type="text" id="subject" value="" placeholder="Subject">
+                </div>
+
+                <div class="tablendata">
+
+                
+                <table class="maintable">
+                    <thead >
+                        <tr class="tablehead">
+                            <th id="itemm">Item</th>
+                            <th id="descriptionn">Description</th>
+                            <th id="quantityy">Qty</th>
+                            <th id="pricee">Price</th>
+                            <th id="totalll">Total</th>
+                            <th class="no-print" id="actionn">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <!-- Rows will be added here -->
+                    </tbody>
+                </table>
+                <button onclick="addRow()" class="no-print">Add Row</button>
+                <button onclick="printInvoice()" class="no-print">Print Invoice</button>
+            
+                <div class="other">
+
+                    <div class="totalnlooking">
+                        
+                      <div class="lookingg">
+                          <p>Looking forward for your valuable order</p>
+                      </div>
+
+                      <div class="totals">
+                          
+                          <div class="subtotal">
+                              <label for="subtotal">Subtotal:</label>
+                              <input  type="number" id="subtotal" readonly>
+                            </div>
+                            <div class="vat">
+                                <label for="vat">VAT (15%):</label>
+                                <input type="number" id="vat" readonly>
+                            </div>
+                            
+                            
+                            <div class="grand-total">
+                                <hr>
+                                <label for="grand-total">Total:</label>
+                                <input type="number" id="grand-total" readonly>
+                                <hr>
+                            </div>
+                        </div>
+
+                    </div>
+                
+                <div class="termsncond">
+                    <h4>Terms & Condition</h4>
+                    <p>Payment Terms:</p>
+                    <p>* Process on the order will not start until payment is received.</p>
+                    <p>* 50% down payment along with PO.</p>
+                    <p>* 40% upon site mobilization & delivery.</p>
+                    <p>* 10% upon completion</p>
+                </div>
+            
+                <div class="scoopwork">
+                  <br> <p>Scope of Work :</p>
+                  <p>* Cutting of Concrete & asphalt as mentioned above.</p>
+                  <p>* Filling concrete & asphalt as mentioned above.</p>
+                  <p>* Barricading with signs and barricade tape around excavation.</p>
+                  <p>* Site Mobilization with tools.</p>
+                  <p>* required PPE for the site.</p>
+                </div>
+
+                <div class="exclusion">
+                    <br>
+                    <p>Exclusion:</p>
+                    <p>* Supply of any item not mentioned in above BOQ or Scope of work.</p>
+                    <p>* Concrete bank is not included in this quotation.</p>
+                    <p>* The above quote is subject to revise if any additional HSE requirements.</p>
+                    <p>* Any permit issuer.</p>
+                    <p>* Any govt permits not in our scope</p>
+                  </div>
+                  
+                  <div class="delivery">
+                    <br><br>
+                    <p>Delivery time:</p>
+                    <p>* Estimated 6-8 working days depending on workload and stock at the time of order</p>
+                  </div>
+                  
+                  <div class="message">
+                    <br>
+                    <p>We hope the above is up to your entire satisfaction, for further queries and details we remain.</p>
+                    <p>Thanking you and assuring you of our best attention at all times.</p>
+                  </div>
+                  
+                  <div style="font-size: 14px; border: none !important; " class="prepared">
+                    <br>
+                    <p>Prepared By:</p>
+                    <div style="margin-top: -1vh;" class="quotenum">
+                      <input style="border: none !important;" autocomplete="off"  type="text" id="quotation-no"  placeholder="Name">
+                    </div>
+                    
+                    <div class="issued" style="margin-top: 0.5vh; margin-bottom: 0.5vh;">
+                      <input style="border: none !important;" autocomplete="off"  type="text" id="issue-date" placeholder="Designation">
+                    </div>
+                    
+                    <div class="expiryd">
+                      <input style="border: none !important;" autocomplete="off" type="text" id="expiry-date" placeholder="E-Mail / Number">
+                    </div>
+                    
+                  </div>
+                  
+                  <div style="font-size: 14px; border: none !important; " class="approved">
+                    <br>
+                    <p>Approved By:</p>
+                    <div style="margin-top: -1vh;" class="quotenum">
+                      <input style="border: none !important;" autocomplete="off"  type="text" id="quotation-no"  placeholder="Name">
+                    </div>
+                    
+                    <div class="issued" style="margin-top: 0.5vh; margin-bottom: 0.5vh;">
+                      <input style="border: none !important;" autocomplete="off"  type="text" id="issue-date" placeholder="Designation">
+                    </div>
+                    
+                    <div class="expiryd">
+                      <input style="border: none !important;" autocomplete="off" type="text" id="expiry-date" placeholder="E-Mail / Number">
+                    </div>
+                  
+                  </div>
+
+                </div>
+
+              </div>
+
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+      <script src="script.js"></script>
+</body>
+</html>

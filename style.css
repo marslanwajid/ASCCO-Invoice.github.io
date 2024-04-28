@@ -1,0 +1,464 @@
+
+table.report-container {
+page-break-after: always;
+}
+
+thead.report-header {
+display: table-header-group;
+border: 0;
+}
+
+tfoot.report-footer {
+display: table-footer-group;
+border: 0;
+}
+
+.maintable {
+page-break-after: auto;
+}
+
+.main {
+border: 0;
+}
+
+body {
+font-family: Arial, sans-serif;
+}
+
+.imgg {
+display: grid;
+place-content: center;
+}
+
+.container {
+display: flex;
+justify-content: space-between;
+padding: 20px;
+margin-left: 1.5vh;
+}
+
+
+.container .customer-info {
+display: flex;
+flex-direction: column;
+width: 40%;
+}
+
+.container .customer {
+display: flex;
+flex-direction: column;
+}
+
+.container .customer #customer-name {
+height: 25px;
+width: 200px;
+font-weight: bolder;
+font-size: 15px;
+border: 0;
+color: green;
+}
+
+
+
+.container .customer #customer-name input {
+background-color: white;
+}
+
+.container .customer #customer-address {
+
+height: 25px;
+width: 200px;
+margin-top: -0.6vh;
+border: 0;
+}
+
+.vendor {
+margin-top: 1vh;
+display: flex;
+flex-direction: column;
+}
+
+.vendor #customer-email {
+height: 25px;
+width: 200px;
+font-size: 15px;
+border: 0;
+}
+
+.quotation-info {
+display: flex;
+flex-direction: column;
+width: 48%;
+color: black;
+font-size: 14px;
+border: 0;
+margin-left: 8vh;
+}
+
+.quotation-info .quotenum {
+display: flex;
+gap: 4vh;
+border: 0;
+}
+
+.quotation-info .quotenum label {
+font-weight: bold;
+}
+
+.quotation-info .quotenum input {
+border: 0;
+text-transform: uppercase;
+}
+
+.quotation-info .issued {
+display: flex;
+gap: 4.35vh;
+border: 0;
+}
+
+.quotation-info .issued label {
+font-weight: bold;
+}
+
+.quotation-info .issued input {
+border: 0;
+}
+
+.quotation-info .expiryd {
+display: flex;
+gap: 3.6vh;
+border: 0;
+}
+
+.quotation-info .expiryd input {
+border: 0;
+}
+
+.quotation-info .expiryd label {
+font-weight: bold;
+}
+
+.quotation-info .salesp {
+display: flex;
+gap: 2.45vh;
+border: 0;
+}
+
+.quotation-info .salesp label {
+font-weight: bold;
+}
+
+.quotation-info .salesp input {
+border: 0;
+}
+
+.customer-info input,
+.quotation-info input {
+margin-bottom: 10px;
+}
+
+.subject {
+display: flex;
+flex-direction: column;
+width: 40%;
+margin-bottom: 20px;
+}
+
+.subject input {
+margin-top: 5px;
+border: 0;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+table-layout: fixed;
+width: 100%;
+}
+
+#itemm,
+#descriptionn,
+#quantityy,
+#pricee,
+#totalll {
+width: 5% !important;
+}
+
+#quantityy {
+width: 10% !important;
+}
+
+#descriptionn {
+width: 60% !important;
+}
+
+#pricee,
+#totalll {
+width: 15% !important;
+}
+
+/* table entries  */
+.description {
+width: 90%;
+border: 0;
+height: 100%;
+text-align: center;
+}
+
+.quantity {
+width: 90%;
+border: 0;
+text-align: center;
+}
+
+.price {
+width: 90%;
+border: 0;
+text-align: center;
+}
+
+.total {
+width: 90%;
+border: 0;
+text-align: center;
+}
+
+/* table entries ended  */
+.no-print {
+height: 50px;
+width: 100px;
+}
+
+th,
+td {
+border: 1px solid black;
+padding: 5px;
+white-space: nowrap;
+}
+
+th {
+background-color: rgba(211, 211, 211, 0.363) !important;
+}
+
+.actions {
+display: flex;
+justify-content: center;
+}
+
+.totalnlooking{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.totalnlooking .totals {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-end;
+font-size: 15px;
+/* margin-right: -8vh; */
+margin-top: 1.3vh;
+}
+
+.totals input {
+font-size: 15px;
+font-weight: bold;
+}
+
+.totals .subtotal {
+margin-top: 10px;
+font-weight: bold;
+}
+
+.totals .subtotal input {
+border: 0;
+}
+
+.totals .vat {
+margin-top: 10px;
+font-weight: bold;
+}
+
+.totals .vat input {
+border: 0;
+}
+
+.totals .grand-total {
+margin-top: 10px;
+font-weight: bold;
+margin-top: -0.5vh;
+}
+
+.totals .grand-total input {
+border: 0;
+}
+
+.lookingg {
+  margin-right: 15.5vh;
+
+}
+
+
+#custl {
+color: black;
+}
+
+#tablehead {
+background-color: gray !important;
+}
+
+.termsncond {
+margin-top: 2vh;
+}
+
+.termsncond p {
+margin-top: -1vh;
+font-size: 13px;
+}
+
+.scoopwork p {
+margin-top: -1vh;
+font-size: 13px;
+}
+
+.exclusion p {
+margin-top: -1vh;
+font-size: 13px;
+}
+
+.delivery p {
+margin-top: -1vh;
+font-size: 13px;
+}
+
+.message p {
+margin-top: -1vh;
+font-size: 13px;
+}
+
+#table-body {
+height: 30px;
+}
+
+@media print {
+.no-print,
+.no-print * {
+display: none !important;
+}
+.imgg {
+display: grid;
+place-content: center;
+margin-left: 3vh;
+}
+
+.tablendata{
+display: flex;
+flex-direction: column;
+}
+
+#custl {
+color: black;
+}
+/* #tablehead {
+background-color: gray !important;
+} */
+.actions {
+display: none !important;
+}
+th {
+background-color: rgba(211, 211, 211, 0.363) !important;
+}
+.totals {
+margin-right: 0; /* Reset margin for smaller screens */
+}
+
+.lookingg {
+margin-top: 1vh;
+}
+
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+.container {
+padding: 10px;
+}
+
+
+nav{
+/* height: 50px; */
+width: 50%;
+margin-left: 13vh;
+
+}
+
+nav img{
+height: 100px;
+/* width: 100px; */
+}
+/* .imgg {
+display: grid;
+place-content: center;
+margin-left: 15vh;
+width: 30%;
+} */
+
+.totals {
+/* margin-righ: 0; Reset margin for smaller screens */
+font-size: 12px; /* Decrease font size for smaller screens */
+
+}
+
+.totals .subtotal,
+.totals .vat,
+.totals .grand-total {
+margin-top: 5px; /* Adjust margin for smaller screens */
+/* margin-left: 3vh; */
+margin-right: 0;
+}
+
+.container .customer-info,
+.quotation-info,
+.subject {
+width: 100%;
+}
+
+/* .quotation-info {
+margin-left: 0;
+} */
+
+.lookingg {
+margin-top: -4vh;
+font-size: 14px;
+}
+
+.quotation-info .quotenum,
+.quotation-info .issued,
+.quotation-info .expiryd,
+.quotation-info .salesp {
+flex-direction: column;
+gap: 10px;
+}
+
+#itemm,
+#descriptionn,
+#quantityy,
+#pricee,
+#totalll,
+#actionn {
+width: auto !important;
+font-size: 10.5px;
+font-weight: bold;
+}
+
+.description{
+  width: 60%;
+}
+
+#actionbtn{
+width: auto;
+}
+
+}
